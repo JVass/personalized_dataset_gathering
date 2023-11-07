@@ -33,14 +33,17 @@ def client_ip():
     except:
         pass
 
+@st.cache_resource
+def db_connection():
+    return pymongo.MongoClient(MONGO_PATH, serverSelectionTimeoutMS=2)
+
 # ------------- GLOBAL VARS ----------------
 available_tags = ['Metal', 'Hip Hop', 'Reggae', 'Pop',
                     'Jazz', 'Disco', 'Blues', 'Country',
-                    'Indian', 'Classical', 'Electronic', 'Rock']
-    
-MONGO_IP = "localhost"
-MONGO_PORT = "27017"
-MONGO_PATH = "mongodb://" + MONGO_IP + ":" + MONGO_PORT
+                    'Indian', 'Classical', 'Electronic',
+                ]   
+
+MONGO_PATH = f"mongodb+srv://{st.secrets['db_username']}:{st.secrets['db_password']}@{st.secrets['db_cluster_name']}.kudxq65.mongodb.net/"
 
 # ------------- FUNCTIONS ------------------
 
@@ -125,8 +128,7 @@ with main_container:
 
     if st.session_state.current_page == "initialization":
         try:
-            client = pymongo.MongoClient(MONGO_PATH,
-                                            serverSelectionTimeoutMS=2)
+            client = db_connection()
             client.server_info() 
 
         except pymongo.errors.ServerSelectionTimeoutError as err:

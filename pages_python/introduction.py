@@ -51,7 +51,7 @@ def introduction(tags):
         st.write('Listen to this excerpt from a song:')
 
         # place song here
-        path_to_song = '/home/vslk/workspace/PhD/experiments/multimodal_concept_learning_for_music_tagging/data/musiccaps_10s/lwdDm3UO5WM.wav'
+        path_to_song = 'songs/-0Gj8-vB1q4.mp3'
 
         audio_file = open(path_to_song, 'rb')
         audio_bytes = audio_file.read()
