@@ -1,13 +1,9 @@
 import streamlit as st
 
-tags = ["Indian Classical Music",
-        "Classical Music",
-        "Electronic Music",
-        "Rock Music",
-        "Metal Music",
-        "Hip Hop music",
-        "Reggae",
-        "Pop music"]
+tags = ['fast', 'calm', 'slow', 'groovy',
+                    'melodic', 'energetic', 'uplifting', 'dance',
+                    'party'
+                ]
 
 def button_pressed():
     

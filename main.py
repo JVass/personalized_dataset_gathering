@@ -38,10 +38,10 @@ def db_connection():
     return pymongo.MongoClient(MONGO_PATH, serverSelectionTimeoutMS=2)
 
 # ------------- GLOBAL VARS ----------------
-available_tags = ['Metal', 'Hip Hop', 'Reggae', 'Pop',
-                    'Jazz', 'Disco', 'Blues', 'Country',
-                    'Indian', 'Classical', 'Electronic',
-                ]   
+available_tags = ['fast', 'calm', 'slow', 'groovy',
+                    'melodic', 'energetic', 'uplifting', 'dance',
+                    'party'
+                ]
 
 MONGO_PATH = f"mongodb+srv://{st.secrets['db_username']}:{st.secrets['db_password']}@{st.secrets['db_cluster_name']}.kudxq65.mongodb.net/"
 

@@ -34,8 +34,8 @@ def introduction(tags):
 
     with st.container():
         txt = st.text_area(
-            "Indian Classical Song",
-            "Indian classical muic is renowned for its unique musical aspects and sounds, which set it apart from other musical genres. Indian Classical Music is primarily melodic in nature, with complex rhythmic patterns. It revolves around the concept of 'raga,' which defines the melodic framework for a composition. Each raga is a unique set of notes, often with microtonal variations, which evoke specific emotions, moods, and imagery. The precise intonation of these notes creates a distinctive and evocative soundscape.  Musicians employ a wide range of ornamentation techniques to enhance the expressiveness of melodies. ",
+            "dance",
+            "It's a genre that heavily relies on electronic production techniques, and it's all about crafting beats, melodies, and textures that can make people move on the dance floor. One key feature is the emphasis on rhythmic elements. Melodically, ou can have catchy, uplifting hooks or more atmospheric, mood-setting tones. Synthesizers are like the paintbrushes, allowing musicians to create a wide spectrum of sounds, from lush pads to sharp leads that cut through the mix.",
             )
 
 
@@ -51,7 +51,7 @@ def introduction(tags):
         st.write('Listen to this excerpt from a song:')
 
         # place song here
-        path_to_song = 'songs/-0Gj8-vB1q4.mp3'
+        path_to_song = 'songs/15.mp3'
 
         audio_file = open(path_to_song, 'rb')
         audio_bytes = audio_file.read()
