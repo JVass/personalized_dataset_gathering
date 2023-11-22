@@ -9,7 +9,7 @@ def introduction(tags):
     st.markdown("# General information")
     
     st.markdown('### Greetings')
-    st.write("Do you know what a 'happy' song means? Do you think that this is what experts think about that term?")
+    st.write("Do you know what a 'dance' song means? Do you think that this is what experts think about that term?")
     st.write("Didn't you have endless fights for the genre a song belongs to?")
     st.write("If yes and with your aid, we aim at solving that once and for all!")
 
@@ -21,10 +21,10 @@ def introduction(tags):
     st.markdown("## Description of experiment")
     st.write("The gathering process consists of three sections. Their names and descriptions are provided below.")
 
-    st.markdown('### Section about musical experience')
+    st.markdown('### 1) Musical Experience')
     st.write('In this section, you will be asked about your musical background, as well as questions about the place music has in your life.')
     
-    st.markdown('### Section A')
+    st.markdown('### 2) Section A')
     st.write('In this section, you will be asked to fill in your definition of specific words/phrases that are used as tags in modern Automatic Music Tagging Systems.')
     st.write('Those words will be given on the top right corner of a grey section, where you can freely insert your description.')
 
@@ -41,7 +41,7 @@ def introduction(tags):
 
     st.markdown('---')
 
-    st.markdown('### Section B')
+    st.markdown('### 3) Section B')
     st.write('In this section, we want you to choose from a dropdown menu all the tags that you find relative to the specific music that you will hear.')
     st.markdown('**REMEMBER**: Try to remember the definition you gave and choose based on that, as well as your general "feeling"!')
 
